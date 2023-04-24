@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+
+*{  box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+    
+.cabecalho{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header li{
+    margin-right: 8px;
+    display: inline;
+
+}
+ 
+header li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    margin: 0px;
+    width: 1366px;
+    
+}
+.articles{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.articles article{
+    width: 30%;
+}
+.articles article img{
+    width: 100%;
+}
+
+article h3{
+    margin-top: 4px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+article p{
+    text-align: justify;
+    margin-top: 3px;
+    
+}
+
+ article header{
+    color: rgb(160, 159, 159);
+ }
+
+section{
+    padding: 15px 0px;
+}
+
+#esportes{
+    background-color:rgba(187, 221, 243, 0.658);
+}
+#games{
+    background-color: rgba(166, 250, 222, 0.349);
+}
+
+
+
+/*links*/
+main #esportes a{
+    background-color: rgb(117, 117, 224);
+    color: white;
+    text-decoration: none;
+    padding: 3px;   
+}
+main #games a{
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+}
+main #economia a{
+    background-color: yellow;
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+}
+main #entreterimento a{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+}
