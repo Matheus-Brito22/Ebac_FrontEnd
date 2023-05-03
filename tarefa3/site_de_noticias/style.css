@@ -6,11 +6,12 @@
     padding: 0px;
 }
 
-
-    
-.cabecalho{
-    background-color: black;
+body > header{
+    background-color: #001d0e;
     color: white;
+}
+    
+header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,8 +32,9 @@ header li a{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+
 .container{
-    margin: 0px;
+    margin: 0px auto;
     width: 1366px;
     
 }
@@ -40,10 +42,13 @@ header li a{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
+    
 }
 
 .articles article{
     width: 30%;
+    margin-top: 15px;
 }
 .articles article img{
     width: 100%;
@@ -58,48 +63,88 @@ article h3{
 article p{
     text-align: justify;
     margin-top: 3px;
+    margin-bottom: 4px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 
- article header{
-    color: rgb(160, 159, 159);
+ .articles header{
+    color: #a09f9f;
  }
 
 section{
     padding: 15px 0px;
+    width: 100%;
+}
+
+section h2{
+   margin-bottom: 16px;
+}
+
+section h3{
+ margin:10px 0 11px 0px;
 }
 
 #esportes{
-    background-color:rgba(187, 221, 243, 0.658);
+    
+    background-color:#2a3f35d7;
 }
 #games{
-    background-color: rgba(166, 250, 222, 0.349);
+    background-color: #355547f3;
+}
+
+#economia{
+    background-color: #4a684a;
+}
+#entreterimento{
+    background-color: #b47171;
 }
 
 
 
 /*links*/
-main #esportes a{
-    background-color: rgb(117, 117, 224);
+
+.articles article a{
+    background-color: #244434;
     color: white;
     text-decoration: none;
-    padding: 3px;   
+    padding: 3px;  
+    margin-top: 10px; 
+    display: inline-block;
 }
-main #games a{
-    background-color: green;
-    color: white;
-    text-decoration: none;
-    padding: 3px;
-}
-main #economia a{
-    background-color: yellow;
+ #games a{
+    background-color: #273527;
     color: white;
     text-decoration: none;
     padding: 3px;
+    display: inline-block;
+    margin-top: 10px; 
 }
-main #entreterimento a{
-    background-color: red;
+#economia a{
+    background-color: #103d24;
     color: white;
     text-decoration: none;
     padding: 3px;
+    display: inline-block;
+    margin-top: 10px; 
 }
+#entreterimento a{
+    background-color: #6e1919;
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+    display: inline-block;
+    margin-top: 10px; 
+}
+
+#esportes a:hover, #games a:hover, #economia a:hover{
+    background-color: #6e1919;
+}
+#entreterimento a:hover{
+    background-color: #244434;
+}
+footer{
+    color: #4a684a;
+}
+
