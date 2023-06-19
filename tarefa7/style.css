@@ -1,0 +1,68 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+}
+
+.container{
+    background-color: #0a0a0a7c;
+    width: 400px;
+    padding: 16px;
+    height: 300px;
+    border-radius: 15px;
+    
+}
+
+
+
+h1, #menssagem{
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#menssagem{
+    margin-top: 20px;
+}
+
+input{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+    width: 300px;
+    outline:none;
+    padding: 2px;
+    border: solid #000000;
+    background-color: #000000;
+    color: white;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+input:hover{
+    border: solid #8a2be2;
+}
+
+.btn{
+    margin-top: 40px;
+    padding: 2px;
+    width: 300px;
+    cursor: pointer;
+    font-weight: bold; 
+    color: white;
+    background-color: #8a2be2;
+    margin-left: 35px;
+}
+
+.btn:hover{
+    background-color: #9c59db;
+    
+}

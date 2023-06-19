@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário</h1>
+    <form id="form">
+    <input type="number" placeholder="Número A" id="numero1">
+    <input type="number" placeholder="Número B" id="numero2">
+    <button type="submit" class="btn" onclick="comparaNumero()">Enviar</button>
+    </form>
+    <div id="menssagem"></div>
+    </div>
+   
+</body>
+
+<script>
+
+    const form = document.getElementById ('form');
+
+    form.addEventListener('submit', function(e){
+       e.preventDefault();
+});
+
+    function comparaNumero(){
+
+        const numeroA = Number(document.getElementById('numero1').value);
+        const numeroB = Number(document.getElementById('numero2').value);
+        const menssagem = document.getElementById('menssagem')
+
+           if (numeroA == numeroB)
+           {      
+            menssagem.innerHTML = "Formulário Invavlido! Valor de B é igual A"
+            }
+            else if(numeroA>numeroB){
+                menssagem.innerHTML = "Formulário Invavlido! Valor de A é maior que B"
+                
+          }
+
+          else if (numeroA<numeroB){
+            menssagem.innerHTML= "Formulário Valido! Valor de B é maior que A"
+          }
+          }
+          
+
+
+
+          //if (numeroA == numeroB) 
+          // {
+            //alert("A é igual a B!");
+          // } 
+           //else if (numeroA > numeroB){
+           // alert( ' A é maior que B')
+          // }
+          // else {
+           // alert ('A é menor que B')
+           //}
+</script>
+</html>
+

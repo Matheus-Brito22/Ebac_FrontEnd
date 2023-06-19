@@ -1,0 +1,72 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}   
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.container{
+    max-width: 1200px;
+    margin: 0px auto;    
+}
+
+form{
+    margin-top: 40px;
+}
+
+input, textarea, button{
+    display: block;
+    margin-top: 10px;
+    width: 500px;
+    padding-top: 10px;
+}
+
+textarea{
+    padding: 0px;
+    resize: none;
+    height: 50px;
+}
+
+button{
+    background-color: rgb(54, 187, 54);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(29, 99, 29);
+}
+
+
+.menssagemSucesso{
+    background-color: rgb(101, 180, 101);
+    padding: 8px;
+    width: 500px;
+    margin-top: 10px;
+    color: white;
+    display: none;
+}
+
+.error-menssage{
+    background-color: red;
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    font-size: 12px;
+    margin-bottom: 8px;
+    display: none;
+}
+
+input.error{
+    color: red;
+    border-color: red;
+    outline-color: red;
+}
