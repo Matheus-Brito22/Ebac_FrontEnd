@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <header>
+        <img src="" alt="imagem chapéu">
+        <h1>Calculadora de Média</h1>
+    </header>
+    <form>
+        <input type="text" required placeholder="Nome da Atividade" id="inp1">
+        <input type="number" required placeholder="Nota" id="inp2">
+        <button type="submit">Adicionar+</button>
+    </form>
+    <table cellspacing = "0">
+        <thead>
+            <tr>
+                <th>
+                    Nome da Atividade
+                </th>
+                <th>
+                    Nota da Atividade
+                </th>
+                <th>
+                    Aprovado?
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Atividade 1
+                </td>
+                <td>
+                    7
+                </td>
+                <td>
+                   <img src="" alt="emoji de chapeuzinho">
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>Média Final</td>
+            <td>7</td>
+            <td><samp class="resultado reprovado">Aprovado</samp></td>
+        </tfoot>
+    </table>
+   </div>
+</body>
+</html>
